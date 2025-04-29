@@ -43,6 +43,8 @@ def build_report(test):
     if test.number is not None:
         result["number"] = test.number
 
+    return result
+
 
 def build_leaderboard(test):
     if test.leaderboard_column is None or test.leaderboard_value is None:

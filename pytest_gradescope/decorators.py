@@ -38,7 +38,7 @@ def number(value: str) -> Callable[[Any], Any]:
     return wrapper
 
 
-type Visibility = Union[
+Visibility = Union[
     Literal["hidden"],
     Literal["after_due_date"],
     Literal["after_published"],
@@ -100,7 +100,7 @@ def tags(tags: Union[str, list[str]]) -> Callable[[Any], Any]:
     return wrapper
 
 
-type LeaderboardSortOrder = Union[Literal["asc"], Literal["desc"]]
+LeaderboardSortOrder = Union[Literal["asc"], Literal["desc"]]
 
 
 def leaderboard(
