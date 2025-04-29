@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="pytest-gradescope",
-    version="0.1.5",
+    version="0.1.6",
     description="A pytest plugin for Gradescope integration",
     long_description=long_description,
     long_description_content_type="text/markdown",

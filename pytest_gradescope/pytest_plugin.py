@@ -30,7 +30,7 @@ def build_report(test):
     }
 
     if test.score is None:
-        result["score"] = test.weight
+        result["score"] = test.weight if test.outcome == "passed" else 0
     else:
         result["score"] = test.score
 
