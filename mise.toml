@@ -1,0 +1,20 @@
+[tools]
+python = "3.10"
+
+[tasks.setup]
+description = "Setup the project environment"
+run = "python -m pip install -r requirements.txt"
+
+[tasks.clean]
+description = "Clean the project directory"
+run = "rm -rf build dist *.egg-info"
+
+[tasks.build]
+description = "Build the project"
+run = "python -m build"
+depends = ["tasks.clean"]
+
+[tasks.upload]
+description = "Upload the package to PyPI"
+depends = ["tasks.build"]
+run = "python -m twine upload dist/*"

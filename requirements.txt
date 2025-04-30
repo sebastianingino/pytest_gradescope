@@ -1,0 +1,3 @@
+setuptools>=80
+build>=1
+twine>=6
